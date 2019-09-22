@@ -7,13 +7,13 @@ public class HolyGrail{
 		int a = 100;
 		int b = 0;
 		
-		System.out.println("Wie oft möchtest du denselben Helden vom Holy Grail beschwören?");
+		System.out.println("Wie oft moechtest du denselben Helden vom Holy Grail beschwoeren?");
 		int c = scanner.nextInt();
 		
 		for(int i = 1; i <= c; i++){
 			b += a;
 			a += 50;
 		}
-		System.out.println("Holy Grails benötigt: " + b );
+		System.out.println("Holy Grails benoetigt: " + b );
 	}
 }
