@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/Player01.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 31.185
+
+[node name="Player1" instance=ExtResource( 1 )]
+id = 1
+
+[node name="Sprite" parent="." index="0"]
+position = Vector2( -0.307342, 0.153678 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2( 0.307373, 7.62939e-006 )
+shape = SubResource( 1 )
